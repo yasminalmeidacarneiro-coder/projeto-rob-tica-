@@ -1,138 +1,385 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Meu Site Moderno</title>
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfólio Maker - Acessibilidade Visual</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-    <!-- CABEÇALHO / NAVEGAÇÃO -->
-    <header class="navbar">
-        <div class="container nav-container">
-            <a href="#" class="logo">Meu<span>Site</span></a>
-            <nav>
-                <ul class="nav-links">
-                    <li><a href="#inicio">Início</a></li>
-                    <li><a href="#sobre">Sobre</a></li>
-                    <li><a href="#servicos">Serviços</a></li>
-                    <li><a href="#contato" class="btn-primary">Contato</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+  <!-- CABEÇALHO E NAVEGAÇÃO -->
+  <header>
+    <div class="container header-container">
+      <h1>Robótica Inclusiva <span>| Acessibilidade Visual</span></h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#prototipos">Protótipos</a></li>
+          <li><a href="#hardware">Hardware</a></li>
+          <li><a href="#diario">Diário de Bordo</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
 
-    <!-- SEÇÃO HERO (DESTAQUE) -->
-    <section id="inicio" class="hero">
-        <div class="container hero-container">
-            <div class="hero-text">
-                <h1>Soluções Inovadoras para o seu Negócio</h1>
-                <p>Transforme suas ideias em realidade com design moderno, performance e alta flexibilidade.</p>
-                <div class="hero-buttons">
-                    <a href="#contato" class="btn-primary">Começar Agora</a>
-                    <a href="#sobre" class="btn-secondary">Saiba Mais</a>
-                </div>
-            </div>
-            <div class="hero-card-preview">
-                <div class="card-glass">
-                    <h3>🚀 Alta Performance</h3>
-                    <p>Layouts otimizados para todos os dispositivos e alta taxa de conversão.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- SEÇÃO HOME / APRESENTAÇÃO -->
+  <section id="home" class="hero">
+    <div class="container">
+      <h2>Portfólio Digital de Protótipos Maker</h2>
+      <p>Desenvolvimento de soluções com Arduino e Inteligência Artificial (Gemini) voltadas para a acessibilidade de pessoas com baixa visão e daltonismo[cite: 1].</p>
+      <div class="badges">
+        <span class="badge">Arduino IDE</span>
+        <span class="badge">Design Universal</span>
+        <span class="badge">IA Gemini</span>
+        <span class="badge">Robótica Educacional</span>
+      </div>
+    </div>
+  </section>
 
-    <!-- SEÇÃO SOBRE -->
-    <section id="sobre" class="sobre">
-        <div class="container">
-            <div class="section-title">
-                <h2>Sobre Nós</h2>
-                <p>Conheça um pouco da nossa história e compromisso com a qualidade.</p>
-            </div>
-            <div class="sobre-grid">
-                <div class="sobre-box">
-                    <h3>Nossa Missão</h3>
-                    <p>Entregar projetos web eficientes, acessíveis e com excelente usabilidade.</p>
-                </div>
-                <div class="sobre-box">
-                    <h3>Nossa Visão</h3>
-                    <p>Ser referência em desenvolvimento de interfaces web modernas e responsivas.</p>
-                </div>
-                <div class="sobre-box">
-                    <h3>Nossos Valores</h3>
-                    <p>Inovação constante, transparência, foco no usuário e excelência no código.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+  <!-- GALERIA DE PROTÓTIPOS -->
+  <main id="prototipos" class="container">
+    <h2 class="section-title">Galeria de Protótipos (Módulos)</h2>
 
-    <!-- SEÇÃO SERVIÇOS -->
-    <section id="servicos" class="servicos">
-        <div class="container">
-            <div class="section-title">
-                <h2>Nossos Serviços</h2>
-                <p>O que podemos fazer pelo seu projeto</p>
-            </div>
-            <div class="servicos-grid">
-                <div class="card-servico">
-                    <div class="icon">💻</div>
-                    <h3>Desenvolvimento Web</h3>
-                    <p>Criação de sites e landing pages personalizadas com HTML, CSS e JavaScript.</p>
-                </div>
-                <div class="card-servico">
-                    <div class="icon">🎨</div>
-                    <h3>UI/UX Design</h3>
-                    <p>Projetos de interfaces intuitivas e focadas na melhor experiência do usuário.</p>
-                </div>
-                <div class="card-servico">
-                    <div class="icon">📱</div>
-                    <h3>Design Responsivo</h3>
-                    <p>Garantia de que seu site funcione perfeitamente em celulares, tablets e PCs.</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    <!-- MÓDULO 1 -->
+    <article class="card">
+      <header class="card-header">
+        <span class="aula-tag">Aulas 23 e 24</span>
+        <h3>Módulo 1: LED Fade-in — Iluminação Suave</h3>
+      </header>
+      <div class="card-body">
+        <p><strong>Problematização:</strong> Mudanças bruscas de luz causam desconforto e ofuscamento em pessoas com baixa visão[cite: 1]. O efeito Fade-in permite transições suaves para orientação espacial em ambientes internos[cite: 1].</p>
+        <p><strong>Conceitos Técnicos:</strong> Portas PWM (pinos 3, 5, 6, 9, 10, 11), função <code>analogWrite()</code>, laço <code>for()</code> e incremento de brilho[cite: 1].</p>
+        <p><strong>Componentes:</strong> Arduino Uno R3, Protoboard, LED 5mm, Resistor 220Ω, Jumpers[cite: 1].</p>
+        
+        <h4>Código-Fonte (Arduino IDE):</h4>
+        <pre><code>// Protótipo: LED Fade-in para Iluminação Suave de Acessibilidade
+// Aula 23/24 - Robótica Educacional
+const int pinoLED = 11; // Pino PWM conectado ao LED
 
-    <!-- SEÇÃO CONTATO -->
-    <section id="contato" class="contato">
-        <div class="container">
-            <div class="section-title">
-                <h2>Fale Conosco</h2>
-                <p>Envie uma mensagem e entraremos em contato em breve.</p>
-            </div>
-            <form class="form-contato">
-                <div class="form-group">
-                    <label for="nome">Nome</label>
-                    <input type="text" id="nome" placeholder="Seu nome completo" required>
-                </div>
-                <div class="form-group">
-                    <label for="email">E-mail</label>
-                    <input type="email" id="email" placeholder="seu@email.com" required>
-                </div>
-                <div class="form-group">
-                    <label for="mensagem">Mensagem</label>
-                    <textarea id="mensagem" rows="5" placeholder="Escreva sua mensagem..." required></textarea>
-                </div>
-                <button type="submit" class="btn-primary">Enviar Mensagem</button>
-            </form>
-        </div>
-    </section>
+void setup() {
+  pinMode(pinoLED, OUTPUT);
+}
 
-    <!-- RODAPÉ -->
-    <footer>
-        <div class="container footer-container">
-            <p>&copy; 2026 MeuSite. Todos os direitos reservados.</p>
-            <div class="footer-links">
-                <a href="#">Termos de Uso</a>
-                <a href="#">Política de Privacidade</a>
-            </div>
-        </div>
-    </footer>
+void loop() {
+  // Efeito Fade-in: aumenta o brilho gradualmente (0 a 255)
+  for (int brilho = 0; brilho &lt;= 255; brilho++) {
+    analogWrite(pinoLED, brilho);
+    delay(15); // Transição suave para maior conforto visual
+  }
+  // Efeito Fade-out: diminui o brilho gradualmente (255 a 0)
+  for (int brilho = 255; brilho &gt;= 0; brilho--) {
+    analogWrite(pinoLED, brilho);
+    delay(15);
+  }
+}</code></pre>
+      </div>
+    </article>
+
+    <!-- MÓDULO 2 -->
+    <article class="card">
+      <header class="card-header">
+        <span class="aula-tag">Aula 28</span>
+        <h3>Módulo 2: LED RGB — Alerta Visual de Emergência</h3>
+      </header>
+      <div class="card-body">
+        <p><strong>Problematização:</strong> Em emergências com pouca visibilidade, placas tradicionais não são suficientes[cite: 1]. Luzes dinâmicas indicam perigo (vermelho) ou rotas seguras (azul)[cite: 1].</p>
+        <p><strong>Conceitos Técnicos:</strong> Sistema RGB, controle de brilho/velocidade via Potenciômetro (entrada analógica A0), modulação PWM[cite: 1].</p>
+        <p><strong>Componentes:</strong> Arduino Uno, LED RGB, Potenciômetro, Resistores 220Ω, Protoboard, Jumpers[cite: 1].</p>
+        
+        <h4>Código-Fonte (Arduino IDE):</h4>
+        <pre><code>// Protótipo: Sinalizador de Emergência RGB com Potenciômetro
+// Aula 28 - Código Gerado/Refinado com Auxílio do Gemini
+const int pinoRed = 9;   // Controle da cor Vermelha (Perigo)
+const int pinoBlue = 10;  // Controle da cor Azul (Rota Segura)
+const int pinoPot = A0;   // Potenciômetro para controle de velocidade/brilho
+
+void setup() {
+  pinMode(pinoRed, OUTPUT);
+  pinMode(pinoBlue, OUTPUT);
+  pinMode(pinoPot, INPUT);
+}
+
+void loop() {
+  int valorPot = analogRead(pinoPot);
+  int tempoPisca = map(valorPot, 0, 1023, 100, 1000); // Mapeia leitura para delay em ms
+
+  // Estado 1: Alerta de Perigo (Vermelho pisca)
+  digitalWrite(pinoRed, HIGH);
+  digitalWrite(pinoBlue, LOW);
+  delay(tempoPisca);
+
+  // Estado 2: Sinalização de Rota Segura (Azul pisca)
+  digitalWrite(pinoRed, LOW);
+  digitalWrite(pinoBlue, HIGH);
+  delay(tempoPisca);
+}</code></pre>
+      </div>
+    </article>
+
+    <!-- MÓDULO 3 -->
+    <article class="card">
+      <header class="card-header">
+        <span class="aula-tag">Aula 30</span>
+        <h3>Módulo 3: Arco-íris Visual — Relógio Cognitivo por Cores</h3>
+      </header>
+      <div class="card-body">
+        <p><strong>Problematização:</strong> Relógios convencionais dificultam a interpretação do tempo[cite: 1]. O sistema associa cores aos períodos do dia (Manhã = Azul, Tarde = Verde, Noite = Vermelho)[cite: 1].</p>
+        <p><strong>Conceitos Técnicos:</strong> Uso de <code>millis()</code> para cronometragem não-bloqueante, alternância de estados e misturas de cores RGB[cite: 1].</p>
+        <p><strong>Componentes:</strong> Arduino Uno, LED RGB, Resistores 220Ω, Protoboard, Jumpers[cite: 1].</p>
+        
+        <h4>Código-Fonte (Arduino IDE):</h4>
+        <pre><code>// Protótipo: Relógio Visual Cognitivo por Cores (Sem bloqueio por delay)
+// Aula 30 - Auxílio IA Gemini
+const int pinoR = 9;
+const int pinoG = 10;
+const int pinoB = 11;
+
+unsigned long tempoAnterior = 0;
+const long intervalo = 5000; // Altera a cada 5 segundos (simulação de período)
+int estadoPeriodo = 0; // 0: Manhã, 1: Tarde, 2: Noite
+
+void setup() {
+  pinMode(pinoR, OUTPUT);
+  pinMode(pinoG, OUTPUT);
+  pinMode(pinoB, OUTPUT);
+}
+
+void setColor(int r, int g, int b) {
+  analogWrite(pinoR, r);
+  analogWrite(pinoG, g);
+  analogWrite(pinoB, b);
+}
+
+void loop() {
+  unsigned long tempoAtual = millis();
+  if (tempoAtual - tempoAnterior &gt;= intervalo) {
+    tempoAnterior = tempoAtual;
+    estadoPeriodo = (estadoPeriodo + 1) % 3;
+  }
+
+  switch(estadoPeriodo) {
+    case 0: setColor(0, 0, 255); break; // Manhã: Azul
+    case 1: setColor(0, 255, 0); break; // Tarde: Verde
+    case 2: setColor(255, 0, 0); break; // Noite: Vermelho
+  }
+}</code></pre>
+      </div>
+    </article>
+
+    <!-- MÓDULO 4 -->
+    <article class="card">
+      <header class="card-header">
+        <span class="aula-tag">Aula 32</span>
+        <h3>Módulo 4: Semáforo Inclusivo — Formas Geométricas + Cores</h3>
+      </header>
+      <div class="card-body">
+        <p><strong>Problematização:</strong> Pessoas com daltonismo têm dificuldade de identificar apenas cores[cite: 1]. A solução associa formas geométricas físicas (Vermelho = Quadrado, Amarelo = Triângulo, Verde = Círculo)[cite: 1].</p>
+        <p><strong>Conceitos Técnicos:</strong> Sequenciamento lógico de LEDs, temporização e integração maker com maquete[cite: 1].</p>
+        <p><strong>Componentes:</strong> Arduino Uno, 3 LEDs, 3 Resistores 220Ω, Maquete recortada com símbolos[cite: 1].</p>
+        
+        <h4>Código-Fonte (Arduino IDE):</h4>
+        <pre><code>// Protótipo: Semáforo Inclusivo para Daltonismo e Baixa Visão
+// Aula 32 - Verde (Círculo), Amarelo (Triângulo), Vermelho (Quadrado)
+const int ledVerde = 8;
+const int ledAmarelo = 9;
+const int ledVermelho = 10;
+
+void setup() {
+  pinMode(ledVerde, OUTPUT);
+  pinMode(ledAmarelo, OUTPUT);
+  pinMode(ledVermelho, OUTPUT);
+}
+
+void loop() {
+  // SINAL VERDE: Liberação (Círculo)
+  digitalWrite(ledVerde, HIGH);
+  digitalWrite(ledAmarelo, LOW);
+  digitalWrite(ledVermelho, LOW);
+  delay(5000);
+
+  // SINAL AMARELO: Atenção (Triângulo)
+  digitalWrite(ledVerde, LOW);
+  digitalWrite(ledAmarelo, HIGH);
+  digitalWrite(ledVermelho, LOW);
+  delay(2000);
+
+  // SINAL VERMELHO: Pare (Quadrado)
+  digitalWrite(ledVerde, LOW);
+  digitalWrite(ledAmarelo, LOW);
+  digitalWrite(ledVermelho, HIGH);
+  delay(5000);
+}</code></pre>
+      </div>
+    </article>
+
+    <!-- MÓDULO 5 -->
+    <article class="card">
+      <header class="card-header">
+        <span class="aula-tag">Aula 34</span>
+        <h3>Módulo 5: Sensor PIR — Orientação Espacial Sonora/Luminosa</h3>
+      </header>
+      <div class="card-body">
+        <p><strong>Problematização:</strong> Identificação automatizada de presença em corredores para guiar pessoas com deficiência visual por alertas sonoros e luz[cite: 1].</p>
+        <p><strong>Conceitos Técnicos:</strong> Leitura digital do Sensor PIR, acionamento de Buzzer, variação PWM e feedback Serial[cite: 1].</p>
+        <p><strong>Componentes:</strong> Arduino Uno, Sensor PIR, Buzzer, LED, Resistor 220Ω, Protoboard, Jumpers[cite: 1].</p>
+        
+        <h4>Código-Fonte (Arduino IDE):</h4>
+        <pre><code>// Protótipo: Assistente de Passagem com PIR e Sinalização Auditiva/Visual
+// Aula 34 - Integração Sensor de Presença + Buzzer + Serial
+const int pinoPIR = 2;
+const int pinoBuzzer = 8;
+const int pinoLED = 9;
+
+void setup() {
+  pinMode(pinoPIR, INPUT);
+  pinMode(pinoBuzzer, OUTPUT);
+  pinMode(pinoLED, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  int presenca = digitalRead(pinoPIR);
+
+  if (presenca == HIGH) {
+    Serial.println("Presença detectada! Acionando alertas...");
+    digitalWrite(pinoBuzzer, HIGH);
+    for (int i = 0; i &lt;= 255; i += 5) {
+      analogWrite(pinoLED, i);
+      delay(10);
+    }
+    delay(1000);
+    digitalWrite(pinoBuzzer, LOW);
+  } else {
+    digitalWrite(pinoBuzzer, LOW);
+    digitalWrite(pinoLED, LOW);
+  }
+}</code></pre>
+      </div>
+    </article>
+
+    <!-- MÓDULO 6 -->
+    <article class="card">
+      <header class="card-header">
+        <span class="aula-tag">Aula 36</span>
+        <h3>Módulo 6: Detector MQ-2 — Alerta Sonoro Frequencial</h3>
+      </header>
+      <div class="card-body">
+        <p><strong>Problematização:</strong> Detectores comuns usam luzes pequenas[cite: 1]. Este protótipo utiliza variação na frequência de bipes sonoros conforme a concentração de gás[cite: 1].</p>
+        <p><strong>Conceitos Técnicos:</strong> Leitura analógica do MQ-2, categorização de faixas de risco e variação de frequência[cite: 1].</p>
+        <p><strong>Componentes:</strong> Arduino Uno, Sensor MQ-2, Buzzer, Protoboard, Jumpers[cite: 1].</p>
+        
+        <h4>Código-Fonte (Arduino IDE):</h4>
+        <pre><code>// Protótipo: Detector Inclusivo de Gás MQ-2 com Bipes Multinivel
+// Aula 36 - Alerta Sonoro Proporcional ao Perigo
+const int pinoMQ2 = A0;
+const int pinoBuzzer = 8;
+
+void setup() {
+  pinMode(pinoMQ2, INPUT);
+  pinMode(pinoBuzzer, OUTPUT);
+  Serial.begin(9600);
+}
+
+void loop() {
+  int nivelGas = analogRead(pinoMQ2);
+  Serial.print("Nível de Gás: ");
+  Serial.println(nivelGas);
+
+  if (nivelGas &lt; 300) {
+    // Nível Seguro: Sem alarme
+    digitalWrite(pinoBuzzer, LOW);
+  } else if (nivelGas &gt;= 300 &amp;&amp; nivelGas &lt; 600) {
+    // Alerta Médio: Bipes lentos
+    digitalWrite(pinoBuzzer, HIGH);
+    delay(300);
+    digitalWrite(pinoBuzzer, LOW);
+    delay(300);
+  } else {
+    // Perigo Alto: Bipes rápidos e contínuos
+    digitalWrite(pinoBuzzer, HIGH);
+    delay(80);
+    digitalWrite(pinoBuzzer, LOW);
+    delay(80);
+  }
+}</code></pre>
+      </div>
+    </article>
+  </main>
+
+  <!-- TABELA INTEGRADA DE HARDWARE -->
+  <section id="hardware" class="container">
+    <h2 class="section-title">Mapeamento de Conexões e Hardware</h2>
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Protótipo</th>
+            <th>Componente Principal</th>
+            <th>Pino Arduino Uno</th>
+            <th>Função no Projeto</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>LED Fade-in</td>
+            <td>LED Difuso 5mm</td>
+            <td>Pino 11 (PWM)</td>
+            <td>Iluminação gradual suave[cite: 1]</td>
+          </tr>
+          <tr>
+            <td>RGB Emergência</td>
+            <td>Potenciômetro + LED RGB</td>
+            <td>A0 (Analog), Pinos 9 e 10</td>
+            <td>Controle de velocidade / Sinal de emergência[cite: 1]</td>
+          </tr>
+          <tr>
+            <td>Arco-íris Visual</td>
+            <td>LED RGB (Cátodo Comum)</td>
+            <td>Pinos 9, 10, 11 (PWM)</td>
+            <td>Relógio visual de rotina por cores[cite: 1]</td>
+          </tr>
+          <tr>
+            <td>Semáforo Inclusivo</td>
+            <td>3 LEDs + Papelão Geométrico</td>
+            <td>Pinos 8, 9, 10</td>
+            <td>Sinalização para daltonismo (Forma + Cor)[cite: 1]</td>
+          </tr>
+          <tr>
+            <td>Sensor PIR</td>
+            <td>PIR + Buzzer</td>
+            <td>Pino 2 (Digital), Pino 8 (Buzzer)</td>
+            <td>Detecção de presença e guia espacial[cite: 1]</td>
+          </tr>
+          <tr>
+            <td>Detector de Gás</td>
+            <td>Sensor MQ-2 + Buzzer</td>
+            <td>A0 (Analog), Pino 8 (Buzzer)</td>
+            <td>Alerta sonoro multinível de segurança[cite: 1]</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- DIÁRIO DE BORDO & REFLEXÕES -->
+  <section id="diario" class="container">
+    <h2 class="section-title">Diário de Bordo & Reflexões</h2>
+    <div class="card">
+      <div class="card-body">
+        <h3>Metodologia "E se...?" & Aprendizado Maker</h3>
+        <p>Durante as aulas, exploramos como pequenas adaptações tecnológicas podem impactar radicalmente a autonomia de pessoas com deficiência visual[cite: 1]. Utilizar a Inteligência Artificial Gemini nos ajudou a otimizar estruturas de código e criar sistemas eficientes como a lógica não-bloqueante por <code>millis()</code> e alertas graduais[cite: 1].</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- RODAPÉ -->
+  <footer>
+    <div class="container">
+      <p>Robótica Educacional & Programação — Foco em Acessibilidade e Inclusão Visual[cite: 1]</p>
+      <p><small>Desenvolvido como Portfólio Digital Maker[cite: 1]</small></p>
+    </div>
+  </footer>
 
 </body>
 </html>
